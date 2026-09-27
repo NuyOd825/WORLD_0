@@ -1,0 +1,41 @@
+/* 모든 요소의 기본 여백을 없앱니다. */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 화면 전체를 검은색으로 채웁니다. */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #000000;
+  color: #ffffff;
+}
+
+/* 왼쪽 위 상태 글자 */
+.hud {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0.04em;
+}
+
+/* 화면 정중앙에 작은 흰 점 */
+.object {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  background: #ffffff;
+  border-radius: 50%;
+  /* 점의 중심이 화면 중심에 오도록 반만큼 당깁니다. */
+  transform: translate(-50%, -50%);
+}
