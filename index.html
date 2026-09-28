@@ -8,18 +8,19 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- 왼쪽 위: 우주 상태 표시 -->
+    <!-- 왼쪽 위: 우주를 관찰하는 창. 값을 바꾸지 않고 보여주기만 합니다. -->
     <aside id="hud" class="hud">
       <div id="world-name"></div>
       <div id="day"></div>
       <div id="objects"></div>
       <div id="laws"></div>
+      <div id="step"></div>
     </aside>
 
-    <!-- 화면 한가운데: 움직이지 않는 점 하나 -->
+    <!-- 화면 한가운데: 아직 움직이지 않는 점 하나 -->
     <div id="object" class="object" aria-hidden="true"></div>
 
-    <!-- 숫자와 글자를 채우는 일은 world.js가 담당합니다. -->
+    <!-- 상태와 법칙, 화면 갱신은 world.js가 담당합니다. -->
     <script src="world.js"></script>
   </body>
 </html>
