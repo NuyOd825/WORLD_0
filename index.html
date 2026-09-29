@@ -15,10 +15,11 @@
       <div id="objects"></div>
       <div id="laws"></div>
       <div id="step"></div>
+      <div id="probability"></div>
     </aside>
 
-    <!-- 화면 한가운데: 아직 움직이지 않는 점 하나 -->
-    <div id="object" class="object" aria-hidden="true"></div>
+    <!-- 검은 화면: 위치별 |ψ|² 를 읽어서 그릴 뿐, 상태를 바꾸지 않습니다. -->
+    <canvas id="view" aria-hidden="true"></canvas>
 
     <!-- 상태와 법칙, 화면 갱신은 world.js가 담당합니다. -->
     <script src="world.js"></script>
